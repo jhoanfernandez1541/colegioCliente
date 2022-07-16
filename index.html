@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<body class="bg-gray-400">
+
+  <h1>Click on table row to see popup</h1>
+  <table id="table" class="table-custom">
+    <thead>
+      <tr class="bg-gray-600 text-gray-300">
+        <th>Nombre</th>
+        <th>almacenamiento</th>
+        <th>sistema</th>
+        <th>Colores</th>
+        <th>actualizar</th>
+        <th>celular</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-index='0'>
+        <td>Celular Umidigi Bison</td>
+        <td>128/64gb</td>
+        <td>android</td>
+        <td>Gold</td>
+        <td>Yes</td>
+        <td><img src="https://exitocol.vtexassets.com/arquivos/ids/11033994/celular-umidigi-bison-128gb-6gb-amarillo.jpg?v=637734547407130000" alt=""></td>
+      </tr>
+      <tr data-index='1'>
+        <td> XIAOMI REDMI 9A</td>
+        <td>32gb</td>
+        <td>android</td>
+        <td>Black</td>
+        <td>Yes</td>
+        <td><img src="https://www.ktronix.com/medias/6941059648758-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNDExODl8aW1hZ2UvanBlZ3xpbWFnZXMvaDc0L2hiNC85NzY3MjMxOTE0MDE0LmpwZ3xhNTU5NDAzNjE4Nzk4MGEyYjU3OWI3OTNjZjFhN2M1OTFmMTY5MTBkODI2NDcxYzdjZjI5OWZmZmVhZmNlZDFl" alt=""></td>
+      </tr>
+      <tr data-index='2'>
+        <td>vivo Y11S
+        <td>64gb</td>
+        <td>android</td>
+        <td>blue</td>
+        <td>Yes</td>
+        <td><img src="https://www.alkosto.com/medias/6935117828831-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNDE1NDZ8aW1hZ2UvanBlZ3xpbWFnZXMvaDc3L2hhYS8xMDU5MDM0NTIzMjQxNC5qcGd8ODAzYTQ2Yzc2NDNiNjA5YzczOTAyYWUzZmM0ODFiYzMzZmRmODAwZmI3YWQ1OGI3NjkxZjA3MWY0MWMyZDI3Yg" alt=""></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="popup-bg">
+    <div id="popup">
+      <span class="close-popup">x</span>
+      <div class="popup-title bg-gray-300">Caracteristicas</div>
+      <ul class="popup-content">
+        <li class="name"></li>
+        <li class="age"></li>
+        <li class="breed"></li>
+        <li class="color"></li>
+        <li class="good"></li>
+      </ul>
+      <div class="img"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>

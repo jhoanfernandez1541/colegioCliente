@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  padding: 20px 0;
+}
+img {
+  max-width: 100%;
+}
+
+#table tr,
+#table th,
+#table td {
+  border: 1px solid #333;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+#table tr:hover:not(thead tr) {
+  background: rgba(255, 255, 255, 0.4);
+}
+#table td:last-child {
+  max-width: 200px;
+}
+.popup-bg {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.popup-bg.active {
+  display: flex;
+}
+#popup {
+  background: #f4f4f4;
+  min-height: 300px;
+  height: auto;
+  width: 400px;
+  position: relative;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}
+.popup-content li {
+  padding: 5px;
+}
+
+.popup-content {
+  padding: 10px 20px 10px 10px;
+}
+.popup-content li span {
+  font-weight: 800;
+}
+.close-popup {
+  font-weight: 600;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  font-size: 2rem;
+  min-width: 20px;
+  min-height: 20px;
+  cursor: pointer;
+}
+#popup .popup-title {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  font-weight: 800;
+}
